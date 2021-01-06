@@ -5,13 +5,14 @@ import DraggableDND from "@/components/Draggable-DND";
 import FolderList from "@/components/FolderList";
 import DND from "@/components/DND";
 import DoubleDND from "@/components/doubleDND";
-
+import Grid from "@/components/Grid";
 import Home from "@/components/Home";
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    { path: '/', redirect: '/home' },
     {
       path: "/home",
       name: "Home",
@@ -41,14 +42,18 @@ export default new Router({
           path: "doubleDND",
           name: "DoubleDND",
           component: DoubleDND
+        },
+        {
+          path: "grid",
+          name: "Grid",
+          component: Grid
         }
       ]
     },
     {
       path: "/",
       name: "Home",
-      component: Home,
+      component: Home
     }
-
   ]
 });
