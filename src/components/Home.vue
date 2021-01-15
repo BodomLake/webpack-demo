@@ -7,6 +7,7 @@
       <router-link to="/home/DND">DND</router-link>
       <router-link to="/home/doubleDND">doubleDND</router-link>
       <router-link to="/home/Grid">NineGrid</router-link>
+      <router-link to="/home/RxJsDemo">RxJsDemo</router-link>
     </template>
     <router-view />
   </div>

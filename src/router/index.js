@@ -7,6 +7,7 @@ import DND from "@/components/DND";
 import DoubleDND from "@/components/doubleDND";
 import Grid from "@/components/Grid";
 import Home from "@/components/Home";
+import RxJsDemo from "@/components/RxJsDemo/RxJsDemo";
 
 Vue.use(Router)
 
@@ -47,6 +48,10 @@ export default new Router({
           path: "grid",
           name: "Grid",
           component: Grid
+        },{
+          path: "rxJsDemo",
+          name: "RxJsDemo",
+          component: RxJsDemo
         }
       ]
     },
